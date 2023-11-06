@@ -4,5 +4,12 @@
         <menuitem id="estate_advertisement_menu" name="Advertisements" sequence="5">
             <menuitem id="estate_property_menu_action" action="estate_property_action" name="Properties" sequence="5"/>
         </menuitem>
+
+        <menuitem id="test" name="Test" sequence="10">
+            <menuitem id="test_action" action="estate_property_action" name="Test" sequence="5"/>
+            <menuitem id="test_action1" action="estate_property_action" name="Test" sequence="10"/>
+            <menuitem id="test_action2" action="estate_property_action" name="Test" sequence="15"/>
+            <menuitem id="test_action3" action="estate_property_action" name="Test" sequence="20"/>
+        </menuitem>
     </menuitem>
 </odoo>

@@ -5,5 +5,3 @@ class EstatePropertyTag(models.Model):
     _name = "estate.property.tag"
 
     name = fields.Char("Tag", required=True)
-
-    property_ids = fields.One2many("estate.property", "property_type_id", string="Properties")

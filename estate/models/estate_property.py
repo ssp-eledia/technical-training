@@ -9,7 +9,6 @@ class EstateProperty(models.Model):
     def _default_date_availability(self):
         return fields.Date.context_today(self) + relativedelta(months=3)
 
-    active = fields.Boolean("Active", default=True)
     name = fields.Char("Name", required=True)
     description = fields.Text("Description")
     postcode = fields.Char("Postcode")
@@ -26,3 +25,4 @@ class EstateProperty(models.Model):
         "Garden orientation", 
         selection=[('north', 'North'), ('south', 'South'), ('east', 'East'), ('west', 'West')]
     )
+    active = fields.Boolean("Active", default=True)

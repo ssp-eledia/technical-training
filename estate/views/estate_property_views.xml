@@ -12,6 +12,7 @@
         <field name="arch" type="xml">
             <tree string="Properties">
                 <field name="name"/>
+                <field name="property_type_id"/>
                 <field name="postcode"/>
                 <field name="bedrooms"/>
                 <field name="living_area"/>
@@ -85,6 +86,7 @@
                 <field name="postcode"/>
                 <field name="expected_price"/>
                 <field name="bedrooms"/>
+                <field name="property_type_id"/>
                 <field name="living_area" filter_domain="[('living_area', '>=', self)]"/>
                 <field name="facades"/>
                 <filter string="Available" name="available" domain="[('state', 'in', ('new', 'offer_received'))]"/>

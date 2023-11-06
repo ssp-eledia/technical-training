@@ -9,7 +9,7 @@ class EstateProperty(models.Model):
     def _default_date_availability(self):
         return fields.Date.context_today(self) + relativedelta(months=3)
 
-    name = fields.Char("Name", required=True)
+    name = fields.Char("Title", required=True)
     description = fields.Text("Description")
     postcode = fields.Char("Postcode")
     date_availability = fields.Date("Available From", copy=False, default=lambda self: self._default_date_availability())
